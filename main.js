@@ -43,7 +43,7 @@ function selFirstChild() {
 }
 
 function checkForWin() {
-	if ($('#tower2').find('.rings').length === 4 || $('#tower3').find('.rings').length === 4) {
+	if ($('#tower1').find('.rings').length === 4 || $('#tower3').find('.rings').length === 4) {
 		$('#winner').html("WINNER");
 	}
 }
