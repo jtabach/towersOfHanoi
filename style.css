@@ -24,29 +24,30 @@
 }
 
 .rings {
-	height: 50px;
+	height: 40px;
 	width: 200px;
 	background: green;
 	margin: 0 auto;
+	border-radius: 30px;
 }
 
 #ring1 {
-	width: 50px;
+	width: 80px;
 	background: red;
 
 }
 #ring2 {
-	width: 100px;
+	width: 130px;
 	background: orange;
 }
 
 #ring3 {
-	width: 150px;
+	width: 180px;
 	background: yellow;
 }
 
 #ring4 {
-	width: 200px;
+	width: 230px;
 	background: green;
 }
 
@@ -78,4 +79,15 @@
 
 span {
 	color: red;
+}
+
+.pole {
+	height: 250px;
+	width: 20px;
+	background: #331a00;
+	border-radius: 10px;
+	/*z-index: -1;*/
+	position: absolute;
+	left: 140px;
+	top: 15px;
 }
