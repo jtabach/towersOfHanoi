@@ -1,5 +1,11 @@
 var whatTower = "-1";
 var moves = 0;
+var $tower;
+var $tower1;
+var $ring;
+var $ring1;
+var $val;
+var $val1;
 $(document).ready(init);
 
 function init() {
