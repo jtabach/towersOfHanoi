@@ -4,7 +4,7 @@
 }
 
 .tower {
-	height: 400px;
+	height: 250px;
 	width: 300px;
 	display: inline-block;
 	position: relative;
@@ -47,4 +47,22 @@
 
 .selected {
 	border: 3px solid blue;
+}
+
+#winner {
+	color: green;
+	text-align: center;
+	font-size: 80px;
+}
+
+#moves {
+	color: red;
+	text-align: center;
+	font-size: 40px;
+}
+
+#title {
+	color: orange;
+	font-size: 80px;
+	text-align: center;
 }

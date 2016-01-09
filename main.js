@@ -1,5 +1,5 @@
 var whatTower = "-1";
-
+var moves = 0;
 $(document).ready(init);
 
 function init() {
@@ -25,9 +25,10 @@ function selFirstChild() {
 		$ring.removeClass('selected');
 		if ($val !== $val1) {
 			if ($ring.width() < $ring1.width() || $tower1.find('.rings').length === 0) {
-				console.log('leggo!!!');
+				moves++;
 				var move = $ring.remove();
 				$tower1.find('.press').prepend(move);
+				$('span').html(moves);
 				checkForWin();
 			}
 		}
@@ -37,6 +38,6 @@ function selFirstChild() {
 
 function checkForWin() {
 	if ($('#tower2').find('.rings').length === 4 || $('#tower3').find('.rings').length === 4) {
-		alert('winner');
+		$('#winner').html("WINNER");
 	}
 }
