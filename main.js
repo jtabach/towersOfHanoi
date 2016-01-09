@@ -12,10 +12,7 @@ function selFirstChild() {
 		$tower = $(this);
 		whatTower = $tower.find('.rings').data('val');
 		$ring = $tower.find('.rings:first-child');
-		
 		$val = $tower.find('.press').data('val');
-		console.log($tower);
-		console.log($tower.find('.rings').length === 0);
 		if ($tower.find('.rings').length === 0) {
 			whatTower = "-1";
 		} else {
@@ -26,8 +23,6 @@ function selFirstChild() {
 		$ring1 = $tower1.find('.rings:first-child');
 		$val1 = $tower1.find('.press').data('val');
 		$ring.removeClass('selected');
-		console.log($tower);
-		console.log($tower1);
 		if ($val !== $val1) {
 			if ($ring.width() < $ring1.width() || $tower1.find('.rings').length === 0) {
 				console.log('leggo!!!');
@@ -40,4 +35,8 @@ function selFirstChild() {
 	}
 }
 
-// function()
+function checkForWin() {
+	if ($('#tower2').find('.rings').length === 4 || $('#tower3').find('.rings').length === 4) {
+		alert('winner');
+	}
+}
