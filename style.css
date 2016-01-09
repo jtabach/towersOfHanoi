@@ -1,0 +1,50 @@
+
+.container {
+	text-align: center;
+}
+
+.tower {
+	height: 400px;
+	width: 300px;
+	display: inline-block;
+	position: relative;
+	margin: 20px;
+	border-bottom: 20px solid #331a00;
+}
+
+.press {
+	position: absolute;
+	bottom: 0;
+	width: 300px;
+}
+
+.rings {
+	height: 50px;
+	width: 200px;
+	background: green;
+	margin: 0 auto;
+}
+
+#ring1 {
+	width: 50px;
+	background: red;
+
+}
+#ring2 {
+	width: 100px;
+	background: orange;
+}
+
+#ring3 {
+	width: 150px;
+	background: yellow;
+}
+
+#ring4 {
+	width: 200px;
+	background: green;
+}
+
+.selected {
+	border: 3px solid blue;
+}
